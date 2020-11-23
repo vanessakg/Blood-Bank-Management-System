@@ -1,21 +1,23 @@
 body{
-    background-color: darkgrey;
+    background-color: #F4F1DE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
-
 h3{
     color: black;
-    background-color: cornflowerblue;
+    background-color: #3D405B;
 }
 
 form{
     display: block;
-    margin-left: center;
-    margin-right: center;
-    text-align: center;
+    
 }
 
 div{
-    background-color: turquoise;
+    background-color: #81B29A;
+    float: center;
+    width: 230px;
+    
+    
 }
 
 button.create{
@@ -30,11 +32,23 @@ button.create{
     
 }
 
+button.donor{
+    background-color: #3D405B;
+    padding: 10px 24px;
+    text-align: center;
+    width: 230px;
+}
+
 #container1{
     height: 180px;
     width: 200px;
     float: center;
     padding-top: 30px;
     padding-left: 30px;
+    margin: auto;
+}
+
+#formContainer{
+    
     margin: auto;
 }
