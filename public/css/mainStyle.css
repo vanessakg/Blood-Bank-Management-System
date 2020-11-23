@@ -1,0 +1,40 @@
+body{
+    background-color: darkgrey;
+}
+
+h3{
+    color: black;
+    background-color: cornflowerblue;
+}
+
+form{
+    display: block;
+    margin-left: center;
+    margin-right: center;
+    text-align: center;
+}
+
+div{
+    background-color: turquoise;
+}
+
+button.create{
+    background-color: darkcyan;
+    border: 1px solid #0d023d;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    width: 150px;
+    
+}
+
+#container1{
+    height: 180px;
+    width: 200px;
+    float: center;
+    padding-top: 30px;
+    padding-left: 30px;
+    margin: auto;
+}

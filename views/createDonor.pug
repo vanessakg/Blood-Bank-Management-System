@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        title Create Donor Profile
+        link(rel='stylesheet', href='css/main2.css')
+    body
+        form(action='newDonor', method='post')
+        h3 New Donor Profile
+        div
+            label(for="donor_id") Create 6-Digit ID:
+            input(name='donor_id' value=' ')
+            br
+            label(for="d_name") Name:
+            input(name='d_name' value=' ')
+            br
+            label(for="d_bloodType") Your Blood Type:
+            input(name='d_bloodType' value=' ')
+            br
+            label(for="d_age") Age:
+            input(name='d_age' value=' ')
+            br
+            label(for="d_phone") Phone Number:
+            input(name='d_phone' value=' ')
+            br
+            label(for="d_gender") Gender:
+            input(name='d_gender' value=' ')
+            br
+            label(for="d_email") Email:
+            input(name='d_email' value=' ')
+            br
+            label(for="d_address") Address:
+            input(name='d_address' value=' ')
+
+    button(type="cancel") Cancel
+    button(type="submit") Create Profile
+    
