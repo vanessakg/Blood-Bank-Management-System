@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        title Create Patient Profile
+        link(rel='stylesheet', href='css/mainStyle.css')
+    body
+    #formContainer
+        form(action='newPatient', method='post')
+        h3 New Patient Profile
+        div
+            label(for="id_patient") Create 6-Digit ID:
+            input(name='id_patient' value=' ')
+            br
+            label(for="p_name") Name:
+            input(name='p_name' value=' ')
+            br
+            label(for="p_bloodType") Your Blood Type:
+            input(name='p_bloodType' value=' ')
+            br
+            label(for="p_age") Age:
+            input(name='p_age' value=' ')
+            br
+            label(for="p_phone") Phone Number:
+            input(name='p_phone' value=' ')
+            br
+            label(for="p_gender") Gender:
+            input(name='p_gender' value=' ')
+            br
+            label(for="p_email") Email:
+            input(name='p_email' value=' ')
+            br
+            label(for="p_address") Address:
+            input(name='p_address' value=' ')
+
+        button(type="cancel" class='donor') Cancel
+        button(type="submit" class='donor') Signup

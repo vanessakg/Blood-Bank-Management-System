@@ -4,9 +4,12 @@ html
         title Welcome to Blood Bank Management System
         link(rel='stylesheet', href='css/mainStyle.css')
     body
+    h3 Welcome to the Blood Bank Management System!
     #container1
-        form(action='post-test', method='post')
-        #button
-            button(type='submit' class='create') Become A Donor!
-        #button
-            button(type='submit' class='create') Register Patient
+        form(action='/registerDonor', method='get')
+            a(href="createDonor")
+                button(type='submit' class='create') Become A Donor!
+
+        form(action='/registerPatient', method='get')
+            a(href="createPatient")
+                button(type='submit' class='create') Register Patient
