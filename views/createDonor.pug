@@ -5,32 +5,33 @@ html
         link(rel='stylesheet', href='css/mainStyle.css')
     body
     #formContainer
-        form(action='newDonor', method='post')
-        h3 New Donor Profile
-        div
-            label(for="donor_id") Create 6-Digit ID:
-            input(name='donor_id' value=' ')
-            br
-            label(for="d_name") Name:
-            input(name='d_name' value=' ')
-            br
-            label(for="d_bloodType") Your Blood Type:
-            input(name='d_bloodType' value=' ')
-            br
-            label(for="d_age") Age:
-            input(name='d_age' value=' ')
-            br
-            label(for="d_phone") Phone Number:
-            input(name='d_phone' value=' ')
-            br
-            label(for="d_gender") Gender:
-            input(name='d_gender' value=' ')
-            br
-            label(for="d_email") Email:
-            input(name='d_email' value=' ')
-            br
-            label(for="d_address") Address:
-            input(name='d_address' value=' ')
+        form(action='/sendDonor', method='post')
+            h3 New Donor Profile
+            div
+                label(for="donor_id") Create 6-Digit ID:
+                input(name='dID' value=' ')
+                br
+                label(for="d_name") Name:
+                input(name='dName' value=' ')
+                br
+                label(for="d_bloodType") Your Blood Type:
+                input(name='dBlood' value=' ')
+                br
+                label(for="d_age") Age:
+                input(name='dAge' value=' ')
+                br
+                label(for="d_phone") Phone Number:
+                input(name='dPhone' value=' ')
+                br
+                label(for="d_gender") Gender (M/F):
+                input(name='dGender' value=' ')
+                br
+                label(for="d_email") Email:
+                input(name='dEmail' value=' ')
+                br
+                label(for="d_address") Address:
+                input(name='dAddress' value=' ')
 
-        button(type="cancel" class='donor') Cancel
-        button(type="submit" class='donor') Signup
+            button(type="cancel" class='donor') Cancel
+            a(href="sendDonor")
+                button(type="submit" class='donor') Signup

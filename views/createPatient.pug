@@ -5,32 +5,33 @@ html
         link(rel='stylesheet', href='css/mainStyle.css')
     body
     #formContainer
-        form(action='newPatient', method='post')
-        h3 New Patient Profile
-        div
-            label(for="id_patient") Create 6-Digit ID:
-            input(name='id_patient' value=' ')
-            br
-            label(for="p_name") Name:
-            input(name='p_name' value=' ')
-            br
-            label(for="p_bloodType") Your Blood Type:
-            input(name='p_bloodType' value=' ')
-            br
-            label(for="p_age") Age:
-            input(name='p_age' value=' ')
-            br
-            label(for="p_phone") Phone Number:
-            input(name='p_phone' value=' ')
-            br
-            label(for="p_gender") Gender:
-            input(name='p_gender' value=' ')
-            br
-            label(for="p_email") Email:
-            input(name='p_email' value=' ')
-            br
-            label(for="p_address") Address:
-            input(name='p_address' value=' ')
+        form(action='/sendPatient', method='post')
+            h3 New Patient Profile
+            div
+                label(for="id_patient") Create 6-Digit ID:
+                input(name='pID' value=' ')
+                br
+                label(for="p_name") Name:
+                input(name='pName' value=' ')
+                br
+                label(for="p_bloodType") Your Blood Type:
+                input(name='pBlood' value=' ')
+                br
+                label(for="p_age") Age:
+                input(name='pAge' value=' ')
+                br
+                label(for="p_phone") Phone Number:
+                input(name='pPhone' value=' ')
+                br
+                label(for="p_gender") Gender:
+                input(name='pGender' value=' ')
+                br
+                label(for="p_email") Email:
+                input(name='pEmail' value=' ')
+                br
+                label(for="p_address") Address:
+                input(name='pAddress' value=' ')
 
-        button(type="cancel" class='donor') Cancel
-        button(type="submit" class='donor') Signup
+            button(type="cancel" class='donor') Cancel
+            a(href="sendPatient")
+                button(type="submit" class='donor') Signup
